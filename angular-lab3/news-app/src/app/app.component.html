@@ -1,0 +1,23 @@
+<div class="app">
+    <nav>
+        <a [ngClass]="{'bi bi-house' : screenWidth<768}" class="nav-item" routerLink="">
+            {{screenWidth>768 ? 'Головна' :''}}
+        </a>
+        <a [ngClass]="{'bi bi-newspaper' : screenWidth<768}" class="nav-item" routerLink="news">
+            {{screenWidth>768 ? 'Новини' : ''}}
+        </a>
+        <a [ngClass]="{'bi bi-person-hearts' : screenWidth<768}" class="nav-item" routerLink="profile">
+            {{screenWidth>768 ? 'Профіль' : ''}}
+        </a>
+        <a [ngClass]="{'i bi-pencil-square' : screenWidth<768}" class="nav-item" routerLink="writepost">
+            {{screenWidth>768 ? 'Написати' : ''}}
+        </a>
+    </nav>
+
+
+<div>
+    <router-outlet></router-outlet>
+</div>
+
+
+</div>

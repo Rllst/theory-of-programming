@@ -1,0 +1,40 @@
+@import "../styles.css";
+
+.app{
+    height: 100vh;
+    background-color:var(--backround-color-light);
+    min-height: 100vh;
+    height: auto;
+}
+
+nav{
+    align-items: center;
+    background-color: var(--color-1);
+}
+
+a{
+    transition: 0.5s;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    display:inline-block;
+    width: 23%;
+    color: var(--color-4);
+    text-decoration: none;
+    font-size: 50px;
+    margin: 1%;
+    border-radius: 5px;
+}
+
+
+a:hover{
+    
+    transition: 0.5s;
+    background-color: var(--color-4);
+    color: var(--color-2);
+}
+
+@media screen and (min-width: 768px) {
+    a{
+        font-size: 25px;
+    }
+}

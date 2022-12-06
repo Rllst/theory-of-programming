@@ -1,0 +1,12 @@
+
+<div class="login-page">
+    <form>
+        <input type="text" placeholder="Кличка" (input)="changeUserName($event)" #username>
+        <br>
+        <input type="password" placeholder="Пароль" (input)="changePassword($event)" id="password">
+        <br>
+        <hr>
+        <input type="button" value="Увійти" (click)="tryLogIn()">
+    </form>
+    
+</div>

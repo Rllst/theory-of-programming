@@ -1,0 +1,212 @@
+:root{
+  --color1: #386641;
+  --color1-opasity: rgba(56, 102, 59, 0.3);
+  --color2: #9e2a2b;
+  --color2-opasity: rgba(158, 42, 43, 0.3);
+  --color3: #fb8b24;
+  --color3-opasity: rgba(251, 139, 36, 0.3);
+  --color4-opasity: rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: var(--color1-opasity);
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.center {
+  align-self: center;
+}
+
+.flow-right {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100vh;
+}
+
+.title, .controls, .button {
+  flex: none;
+}
+
+.button {
+  padding: 10px 20px;
+}
+
+.todo-list {
+  flex: 1 1 0;
+  margin-top: 20px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.todo-delete {
+  margin: 10px;
+}
+
+.todo-checkbox {
+  margin: 10px;
+}
+
+.todo-container {
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.todo-container:first-of-type {
+  border-top: 1px solid #333;
+}
+
+.todo-li {
+  list-style: none;
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 10px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
+
+}
+
+.todo-li::selection{
+  background-color: var(--color3-opasity);
+}
+
+.added {
+  transition: 0.5s;
+  border-color: var(--color2);
+  background-color: var(--color2-opasity);
+}
+
+.ready {
+  text-decoration: line-through;
+  
+  border-color: var(--color1);
+  background-color: var(--color1-opasity);
+  color: var(--color4-opasity);
+  transition: 1.5s;
+}
+
+.ready:hover{
+  text-decoration: none;
+  color: #000;
+  transition: 1.5s;
+}
+
+input[type=checkbox]{
+  cursor: pointer;
+}
+
+.button{
+  border: none;
+  border-radius:4px;
+  font-size: large;
+  background-color: var(--color3-opasity);
+}
+
+.button:hover{
+  background-color: var(--color3);
+  color: white;
+  transition: 1s;
+}
+
+.delete-btn{
+  background-color: var(--color3-opasity);
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  margin-left: 1%;
+}
+
+.delete-btn::before{
+  content: ' \2717';
+  color: white;
+}
+
+.delete-btn:hover{
+  background-color: var(--color2);
+  transition: 5s;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  margin-left: 1%;
+}
+
+.unchecked-count{
+  background-color: none;
+  transition: 0.5s;
+}
+
+.unchecked-count-ready{
+  transition: 0.5s;
+  background-color: var(--color1-opasity);
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 14px 16px var(--color1-opasity);
+-moz-box-shadow: 0px 0px 14px 16px var(--color1-opasity);
+box-shadow: 0px 0px 14px 16px var(--color1-opasity);
+}
+
+.unchecked-count-red{
+  transition: 0.5s;
+  background-color: var(--color2-opasity);
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 14px 16px var(--color2-opasity);
+-moz-box-shadow: 0px 0px 14px 16px var(--color2-opasity);
+box-shadow: 0px 0px 14px 16px var(--color2-opasity);
+}
+
+.update-btn::before{
+  content: '\270E';
+  color: white;
+}
+
+.update-btn{
+  background-color: var(--color3-opasity);
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  margin-left: 1%;
+}
+
+.update-btn:hover{
+  background-color: var(--color1);
+  transition: 5s;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  margin-left: 1%;
+}
+
+.button-remove-all{
+  margin-top: 20px;
+  background-color: var(--color2-opasity);
+}
+
+.button-remove-all:hover{
+  background-color: var(--color2);
+  transition: 1s;
+}

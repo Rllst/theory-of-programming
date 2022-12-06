@@ -1,0 +1,90 @@
+.user-photo{
+    background-color: var(--color-4);
+    width: 100%;
+    height: 400px;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.page{
+    height: 100%;
+    color: var(--color-1);
+    margin-top: 70px;
+    background-color: var(--backround-color-light);
+}
+
+h1{
+    padding-top: 0px;
+}
+
+.user-posts{
+
+    padding: 10px;
+    margin-bottom: 5vh;
+    height: 75vh;
+    overflow-y: scroll;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.nickName-on-photo {
+    color: var(--color-2);
+    margin-top: -60px;
+    font-size: 40px;
+    padding: 5px 10px;
+    opacity: 0.7;
+}
+
+.nickName-on-photo:hover{
+    transition: 1.0s;
+    background-color: var(--color-1);
+    color: var(--color-4);
+    
+}
+
+.social-media{
+    text-align: center;
+    color: var(--color-1);
+}
+
+i{
+    margin: 0px 10px;
+    padding: 0px 10px;
+    font-size: 30px;
+}
+
+i:hover{
+    transition: 0.5s;
+    border: solid 4px;
+}
+
+.noautorisation{
+    margin-top: 20vh;
+    color: var(--color-1);
+    text-align: center;
+}
+
+h1, button{
+    border: none;
+    font-size: 26px;
+    display: inline-block;
+   margin-bottom: 12px;
+   background:none;
+    width: 90%;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button{
+    background-color: var(--color-4);
+    padding: 12px;
+    border-radius: 5px;
+   
+}
+
+button:hover{
+    transition: 0.5s;
+    background-color: var(--color-2);
+    color: var(--color-4);
+}

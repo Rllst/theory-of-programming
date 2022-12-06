@@ -1,0 +1,26 @@
+<div class="write-new-post-page" *ngIf="autorisation; else noautorisation">
+<div class="contaiter">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="creator-block">
+                <h1>Напишіть статтю</h1>
+                <input type="text" (input)="changeImg($event)" placeholder="imgUrl">   
+                <input type="text" (input)="changeTitle($event)" placeholder="Title">
+                <textarea name="" id="" class="text" cols="30" rows="10" (input)="changeText($event)" placeholder="Text"></textarea>  
+            </div>
+              
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="post">
+                <button (click)="addPost()">Опублікувати</button>
+                <app-post [item]="post"></app-post>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</div>
+
+<ng-template #noautorisation >
+    <h1 class="noautorisation">Схоже, ви забули авторизуватися! Зробіть це тут <a href="" class="bi bi-person-workspace noautorisation" routerLink="news"></a></h1>
+</ng-template>

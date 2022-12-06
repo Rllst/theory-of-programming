@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <button (click)="reverseNewsList()"><i class="bi bi-arrow-down-up"></i></button>
+            <h1>Наші статті:</h1>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <app-post class="col-12 col-md-6" *ngFor="let i of newslist" [item]="i"></app-post>
+    </div>
+    
+</div>

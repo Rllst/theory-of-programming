@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <title>Your listener</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container-head">
+            <div class="header__body">
+                <div class="header__logo">
+                </div>
+
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li>
+                            <a href="#photo" class="header__link">Фото</a>
+                        </li>
+                        <li>
+                            <a href="" class="header__link">Біо</a>
+                        </li>
+                        <li>
+                            <a href="" class="header__link">Послуги</a>
+                        </li>
+                        <li>
+                            <a href="#contacts" class="header__link">Контакти</a>
+                        </li>
+                        <li>
+                            <a href="" class="header__link">Ще щось там</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="/burger.js"></script>
+<script>$(document).ready(function(){
+    $('.header__burger').click(function(event){
+        $('.header__burger, .header__menu').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+});</script>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center big-ttl">Бенеди́кт Ті́моті Ка́рлтон Камбербе́тч</h1>
+            </div>
+        </div>
+        <div class="row bio">
+
+            <div class="col-12 col-md-4">
+                <img class="circle-photo" src="data:image/jpeg;base64,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 " >
+            </div>
+            <div class="col-12 col-md-6">
+                <p>
+                    Бенедикт Тімоті Карлтон Камбербетч народився 19 липня 1976 року в Лондоні, Англія, Великобританія. Він є сином акторів Тімоті Карлтона і Ванди Вентхам. Початкову освіту Бенедикт отримав в школі Брамблтай в Західному Сассексі, а потім її продовжив у престижному навчальному закладі Херроу (північний захід Лондона). Там же він вперше мав можливість проявити себе на сцені. Після навчання Камбербетч поїхав на рік в Тибет, де працював викладачем англійської мови. Потім Бенедикт пішов до Манчестерського університету, де отримав ступінь бакалавра мистецтв за спеціальністю драма. Після закінчення університету Камбербетч продовжив театральну освіту в Лондонській академії музичного та драматичного мистецтва, має ступінь магістра мистецтв за спеціальністю класичного актора театру.
+                </p>
+                <hr>
+                <h2>
+                    Цитати
+                </h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 bg-color-2 block">
+                            <h3>
+                                Бог нагородив мене дивним обличчям - чимось середнім між мордою видри та тим, що люди вважають привабливим.
+                            </h3>
+                        </div>
+                        <div class="col-6 block bg-color-4">
+                            <h3>
+                                «Хлопці кажуть мені: «Моя дівчина без розуму від вас».
+                                <br>
+                                - «Мої співчуття», - відповідаю я».
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+        <br> <br>
+        <div class="row" id="photo">
+            <div class="col-12 col-md-3 block-photo bg-color-4" style="background-image:url('https://regnum.ru/uploads/pictures/news/2018/09/10/regnum_picture_1536564478118085_normal.jpg');"></div>
+            <div class="col-12 col-md-2 block-photo bg-color-2" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeR6iSK63N_pLH_fhEypVTDynNkL6ifzQEnw&usqp=CAU');"></div>
+            <div class="col-12 col-md-3 block-photo bg-color-4" style="background-image: url('https://s13.stc.yc.kpcdn.net/share/i/12/7879489/wr-960.webp');"></div>
+            <div class="col-12 col-md-2 block-photo bg-color-2" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/BCumberbatch_Comic-Con_2019.jpg');"></div>
+        </div>
+        
+        <div class="row">
+            <div class="col"><hr style="margin-top: 50px;" width="100%"> </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <form action="">
+                    <div class="input-container">
+                        <input
+                        type="text"
+                        id="username"
+                        class="text-input"
+                        autocomplete="off"
+                        placeholder="Введіть ваше ім'я"
+                        required
+                        />
+                        <label class="label" for="username">Ім'я</label>
+                    </div>
+                    <br>
+                    <div class="input-container">
+                        <input
+                        type="text"
+                        id="phone"
+                        class="text-input"
+                        autocomplete="off"
+                        placeholder="Введіть номер телефону"
+                        required
+                        />
+                        <label class="label" for="phone">Телефон</label>
+                    </div>
+                    <br>
+                    <div class="input-container">
+                        <input
+                        type="text"
+                        id="post"
+                        class="text-input"
+                        autocomplete="off"
+                        placeholder="Введіть пошту"
+                        required
+                        />
+                        <label class="label" for="post">Пошта</label>
+                    </div>
+                    <br>
+                    <button class="button-form">Зв'язатись зі мною</button>
+                    <br>
+                </form>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-12 block-photo-pal bg-color-2"><h6>У 2015 році йоговідзначила сама королева Єлизавета II, яка вручила звання командора ордена Британської імперії.
+                          </h6></div>
+                        <div class="col-md-6 block-photo-pal bg-color-4" style="background-image: url('https://kinoreporter.ru/wp-content/uploads/2021/07/benedikt-750x500.jpg?x89191');" ></div>
+                        <div class="col-md-2 block-photo-pal bg-color-2 text-center"><h5>Рівень IQ високий - 158.</h5></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 block-photo-pal bg-color-4">
+                            <div class="container">
+                                <div class="row">
+
+                                </div>
+                                <div class="row">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 block-photo-pal bg-color-2 text-center">
+                            <h6>Є далеким родичем короля Річарда III, який правив у Великобританії з 1482 року по 1485. Їх розділяє 16 поколінь.
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="col-md-5 block-photo-pal bg-color-4" style="background-image: url('https://maximum.fm/uploads/media_news/2018/10/b772f189343382f38d4de7d211c38c1e66ed87bf.jpg?w=1200&h=675&il&q=90&output=jpg') ;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+ 
+    <footer>
+        <div class="text-center footer-item" id="contacts">+380666666666 або +380999999999 </div>
+    </footer>
+
+</body>
+</html>
